@@ -7,7 +7,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  // createCanvas(windowWidth, windowHeight);
   faceMask = loadModel("assets/faceMesh.obj", true) // true sets NORMALIZATION ON --> meaning it scales the model to a standard size
   // !!! WebGL DOES NOT LOAD !!!
 }

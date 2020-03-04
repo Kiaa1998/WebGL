@@ -23,7 +23,7 @@ function draw() {
   //
   // ambientLight(100,0,100);
   // directionalLight(255,255,255,0,1,-1);
-  normalMaterial(255);
+  // normalMaterial(255);
   rotateZ(180);
   rotateX(frameCount*0.5);
   rotateY(frameCount*0.5);

@@ -7,7 +7,7 @@ function preload(){
 }
 
 function setup() {
-  // createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight, WEBGL);
   faceMask = loadModel("assets/faceMesh.obj", true) // true sets NORMALIZATION ON --> meaning it scales the model to a standard size
   // !!! WebGL DOES NOT LOAD !!!
 }
@@ -21,9 +21,9 @@ function draw() {
   //                                                                   // the camera points at the center of the canvas (0,0,0)
   //                                                                   // the orientation is towards Y
   //
-  // ambientLight(100,0,100);
-  // directionalLight(255,255,255,0,1,-1);
-  // normalMaterial(255);
+  ambientLight(100,0,100);
+  directionalLight(255,255,255,0,1,-1);
+  normalMaterial(255);
   rotateZ(180);
   rotateX(frameCount*0.5);
   rotateY(frameCount*0.5);
